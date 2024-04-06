@@ -25,6 +25,7 @@ export default class Charts extends Component {
   }
 
   render () {
+    console.log("On chart render");
     const restProps = omit(this.props, Object.keys(Charts.propTypes));
     return React.createElement('div', {
       ref: React.createRef
